@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="imgDiv">
+      <img src="LaptopImg.jpg" alt="LaptopImg" width="55em" id="laptop" />
+    </div>
+
+    <button class="subBtn" onclick="sendtoWhatsapp()">Submit</button>
+    <!-- 
+     -->
+    <script>
+      function sendtoWhatsapp() {
+        let laptop = document.getElementById("laptop").src;
+
+        let url = "https://wa.me/917304888579?text=" + "Laptop: " + laptop;
+
+        window.open(url, "_blank").focus();
+      }
+    </script>
+  </body>
+</html>
